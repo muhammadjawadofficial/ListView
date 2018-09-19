@@ -6,11 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to show in list"
+        app:layout_constraintBottom_toTopOf="@+id/lvCars" />
+
     <ListView
         android:id="@+id/lvCars"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/inputField">
 
     </ListView>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="32dp"
+        android:background="#0084ff"
+        android:text="+"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
